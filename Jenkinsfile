@@ -4,9 +4,7 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-                echo "Testing ..."
                 yarn test:unit
-                yarn test:e2e
             }
         }
 
