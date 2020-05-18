@@ -6,7 +6,6 @@ pipeline{
             steps{
                 echo "Testing ..."
                 sh 'yarn test:unit'
-                sh 'yarn test:e2e'
             }
         }
 
