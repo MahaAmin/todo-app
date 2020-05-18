@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package.json .
 
-RUN npm install && npm update -g @vue/cli-service
+RUN npm install && npm install -g @vue/cli-service
 
 EXPOSE 8081
 
