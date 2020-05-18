@@ -8,11 +8,5 @@ pipeline{
                 sh 'yarn test:unit'
             }
         }
-
-        stage('Deploy'){
-            steps{
-                echo "Deploying ...."
-            }
-        }
     }
 }
