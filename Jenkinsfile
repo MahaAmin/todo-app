@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-                sh 'docker run todo test:unit'
+                sh 'yarn test:unit'
             }
         }
     }
