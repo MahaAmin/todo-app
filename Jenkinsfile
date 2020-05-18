@@ -7,5 +7,10 @@ pipeline{
                 sh 'yarn test:unit'
             }
         }
+        stage('Build'){
+            steps{
+                sh 'yarn serve'
+            }
+        }
     }
 }
