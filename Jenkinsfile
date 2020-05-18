@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-                ls
+                sh 'ls'
                 sh 'yarn test:unit'
             }
         }
