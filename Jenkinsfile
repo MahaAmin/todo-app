@@ -5,8 +5,8 @@ pipeline{
         stage('Test'){
             steps{
                 echo "Testing ..."
-                yarn test:unit
-                yarn test:e2e
+                sh 'yarn test:unit'
+                sh 'yarn test:e2e'
             }
         }
 
