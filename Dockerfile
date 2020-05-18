@@ -10,5 +10,4 @@ EXPOSE 8081
 
 COPY . .
 
-CMD ["yarn", "install"]
-
+CMD yarn install && yarn serve
