@@ -10,6 +10,4 @@ EXPOSE 8081
 
 COPY . .
 
-ENTRYPOINT [ "yarn" ]
-
 CMD yarn install && yarn serve
