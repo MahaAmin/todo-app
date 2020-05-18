@@ -2,10 +2,12 @@ pipeline{
     agent{ dockerfile true}
 
     stages{
+        stage('Build'){
+            
+        }
         stage('Test'){
             steps{
-                echo "Testing ..."
-                sh 'yarn test:unit'
+                sh 'docker run todo test:unit'
             }
         }
     }
