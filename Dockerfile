@@ -10,5 +10,7 @@ EXPOSE 8081
 
 COPY . .
 
+RUN yarn install
+
 CMD ["yarn", "serve"]
 
