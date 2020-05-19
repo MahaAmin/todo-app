@@ -5,7 +5,7 @@ pipeline{
         stage('Test'){
             steps{
                 sh 'cd /usr/src/app'
-                sh 'pwd'
+                sh 'ls'
                 sh 'yarn test:unit'
             }
         }
