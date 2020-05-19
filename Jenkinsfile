@@ -4,8 +4,8 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-                sh 'ls'
-                sh 'yarn test:unit'
+                sh 'docker run todo ls'
+                sh 'docker run yarn test:unit'
             }
         }
     }
