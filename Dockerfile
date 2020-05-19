@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN npm install --production=false && npm install -g @vue/cli-service
+RUN npm install
 
 EXPOSE 8081
 
