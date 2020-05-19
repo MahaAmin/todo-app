@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-                dir('/usr/src/app'){
+                dir('app'){
                     sh 'ls'
                     sh 'yarn test:unit'
                 }
