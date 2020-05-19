@@ -4,7 +4,8 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-                sh 'docker run todo ls'
+                sh 'cd /usr/src/app'
+                sh 'ls'
                 sh 'docker run yarn test:unit'
             }
         }
