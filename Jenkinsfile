@@ -2,7 +2,7 @@ pipeline{
     agent{ dockerfile true}
 
     stages{
-        stage('Build'){
+        stage('Artifact'){
             steps{
                 archiveArtifacts artifacts: '.'
             }
