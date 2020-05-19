@@ -2,12 +2,15 @@ pipeline{
     agent{ dockerfile true}
 
     stages{
+        stage('Build'){
+            steps{
+                archiveArtifacts artifacts: '.'
+            }
+        }
         stage('Test'){
             steps{
-                dir('app'){
-                    sh 'ls'
-                    sh 'yarn test:unit'
-                }
+                sh 'ls'
+                sh 'yarn test:unit'
             }
         }
     }
