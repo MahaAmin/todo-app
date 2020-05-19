@@ -6,7 +6,7 @@ pipeline{
             steps{
                 sh 'cd /usr/src/app'
                 sh 'ls'
-                sh 'docker run yarn test:unit'
+                sh 'yarn test:unit'
             }
         }
     }
