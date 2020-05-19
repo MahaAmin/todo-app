@@ -6,8 +6,10 @@ COPY package.json .
 
 RUN npm install
 
+RUN yarn install 
+
 EXPOSE 8081
 
 COPY . .
 
-CMD yarn install && yarn serve
+CMD yarn serve
