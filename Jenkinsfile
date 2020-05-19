@@ -3,10 +3,11 @@ pipeline{
 
     stages{
         stage('Test'){
-            dir('/usr/src/app')
             steps{
-                sh 'ls'
-                sh 'yarn test:unit'
+                dir('/usr/src/app'){
+                    sh 'ls'
+                    sh 'yarn test:unit'
+                }
             }
         }
     }
